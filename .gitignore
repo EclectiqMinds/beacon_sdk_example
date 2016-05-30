@@ -1,0 +1,48 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Android generated files
+bin/
+gen/
+# Checkstyle
+.checkstyle
+
+# Android Lint
+lint.xml
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+classes
+gen-external-apklibs
+out
+
+# Gradle 
+.gradle
+build
+
+# Misc.
+*.DS_Store
+*.jar.properties
+
+# Local configuration file (sdk path, etc)
+local.properties
+
