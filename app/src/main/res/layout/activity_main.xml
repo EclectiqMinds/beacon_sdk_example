@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100">
+
+    <Button
+        android:id="@+id/button_normal_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/button_normal_start"
+        android:textColor="@color/white_100"/>
+
+    <Button
+        android:id="@+id/button_normal_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_normal_start"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/button_normal_stop"
+        android:textColor="@color/white_100"/>
+
+    <Button
+        android:id="@+id/button_silent_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_normal_stop"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/start_silent_scan"
+        android:textColor="@color/white_100"/>
+
+    <Button
+        android:id="@+id/button_silent_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_silent_start"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/stop_silent_scan"
+        android:textColor="@color/white_100"/>
+
+    <TextView
+        android:id="@+id/state_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_silent_stop"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textSize="8pt"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state_textview"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>
