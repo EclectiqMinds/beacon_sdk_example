@@ -26,7 +26,7 @@ dependencies {
     compile 'com.android.support:design:23.3.0'
     //ButterKnife
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile ('com.eclectiqminds.beacon.sdk:Beacon-SDK:1.0.1@aar'){
+    compile ('com.eclectiqminds.beacon.sdk:Beacon-SDK:1.1.0@aar'){
         transitive = true
     }
 }

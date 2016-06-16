@@ -1,5 +1,6 @@
 package com.eclectiqminds.beacon.sdk.example;
 
+
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements ScannerServiceLis
     private ScannerService scannerService;
     private boolean shouldServiceShouldDownByOnStop = false;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity implements ScannerServiceLis
         ButterKnife.bind(this);
         adapter = new ListAdapter(this);
         listView.setAdapter(adapter);
-        
-        scannerService = ScannerService.instance(getApplication());
+        scannerService = ScannerService.instance(getApplication(), true);
     }
 
     @Override
